@@ -1,0 +1,99 @@
+[
+    {
+        "weather": {
+            "icon": "c01n",
+            "description": "Few clouds",
+            "code": 801
+        }
+    },
+    {
+       
+        "weather": {
+            "icon": "c01n",
+            "description": "Clear Sky",
+            "code": 800
+        }
+    },
+    {
+        "weather": {
+            "icon": "c01n",
+            "description": "Clear Sky",
+            "code": 800
+        }
+    },
+    {
+        
+        "weather": {
+            "icon": "c01n",
+            "description": "Clear Sky",
+            "code": 800
+        }
+    },
+    {
+        "weather": {
+            "icon": "c01n",
+            "description": "Clear Sky",
+            "code": 800
+        }
+    },
+    {
+        "weather": {
+            "icon": "c01n",
+            "description": "Overcast clouds",
+            "code": 800
+        }
+    },
+    {
+        "weather": {
+            "icon": "c02n",
+            "description": "heavy rain",
+            "code": 801
+        }
+    },
+    {
+       
+        "weather": {
+            "icon": "c02d",
+            "description": "Few clouds",
+            "code": 801
+        }
+    },
+    {
+       
+        "weather": {
+            "icon": "c02d",
+            "description": "Scattered clouds",
+            "code": 802
+        }
+    },
+    {
+       
+        "weather": {
+            "icon": "c02d",
+            "description": "Scattered clouds",
+            "code": 802
+        }
+    },
+    {
+        "weather": {
+            "icon": "c02d",
+            "description": "Scattered clouds",
+            "code": 802
+        }
+    },
+    {
+        "weather": {
+            "icon": "c02d",
+            "description": "Scattered clouds",
+            "code": 802
+        }
+    },
+    {
+
+        "weather": {
+            "icon": "c03d",
+            "description": "Broken clouds",
+            "code": 803
+        }
+    }
+]
