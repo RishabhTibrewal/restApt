@@ -49,8 +49,15 @@ app.get('/:param1', async (req, res) => {
     //   console.log(data.data[2].weather.description);
     // const jsonString = JSON.stringify();
     console.log(data);
+    if(data == "Few clouds" || data == "Overcast clouds" || data == "Broken clouds" ||
+    data == "Clear Sky" || data == "Scattered clouds" 
+    ){
+      let data2 = false;
+      console.log(data2);
+      res.json({ data: data2 });
+    }
 
-    res.send( data );
+    // res.json({ data: data });
 
     })    
     console.log(latitude, longitude);
@@ -66,3 +73,9 @@ app.get('/:param1', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
   });
+
+// &city=Raleigh&country=US
+// https://api.weatherbit.io/v2.0/current &city=Raleigh&country=US2&key=d21ca0a0f6094effa1f9c7fd5f8881ed&include=minutely
+
+
+// https://api.weatherbit.io/v2.0/history/hourly?	&city=Raleigh,NC&start_date=2024-05-08&end_date=2024-05-09&tz=local&key=d21ca0a0f6094effa1f9c7fd5f8881ed
