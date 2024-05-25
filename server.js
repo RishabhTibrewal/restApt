@@ -72,6 +72,7 @@ app.get('/:param1', async (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
+    
   });
 
 // &city=Raleigh&country=US
