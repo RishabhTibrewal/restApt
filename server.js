@@ -42,7 +42,7 @@ app.get('/:param1', async (req, res) => {
 
     // const apiUrl = `https://api.weatherbit.io/v2.0/history/hourly?lat=${latitude}&lon=${longitude}&start_date=${pastDate}&end_date=${data}&tz=local&key=bef3ac77ed6d41d2916eb1b2de000683`;
 
-    const apiUrl = `https://api.weatherbit.io/v2.0/history/hourly?&city=${param1}&start_date=${pastDate}&end_date=${data}&tz=local&key=bef3ac77ed6d41d2916eb1b2de000683`;
+    const apiUrl = `https://api.weatherbit.io/v2.0/history/hourly?&city=${param1}&start_date=2024-05-26&end_date=2024-05-27&tz=local&key=bef3ac77ed6d41d2916eb1b2de000683`;
 
     axios.get(apiUrl)
     .then(response2 => {
