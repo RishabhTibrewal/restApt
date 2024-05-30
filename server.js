@@ -40,21 +40,28 @@ app.get('/:param1', async (req, res) => {
     
 
 
-    const apiUrl = `https://api.weatherbit.io/v2.0/history/hourly?lat=${latitude}&lon=${longitude}&start_date=${pastDate}&end_date=${data}&tz=local&key=d21ca0a0f6094effa1f9c7fd5f8881ed`;
+    // const apiUrl = `https://api.weatherbit.io/v2.0/history/hourly?lat=${latitude}&lon=${longitude}&start_date=${pastDate}&end_date=${data}&tz=local&key=bef3ac77ed6d41d2916eb1b2de000683`;
+
+    const apiUrl = `https://api.weatherbit.io/v2.0/history/hourly?&city=${param1}&start_date=${pastDate}&end_date=${data}&tz=local&key=bef3ac77ed6d41d2916eb1b2de000683`;
 
     axios.get(apiUrl)
     .then(response2 => {
       // Access response data
-      const data = response2.data.data[2].weather.description;
+      const data = response2.data.data[23].weather.description;
     //   console.log(data.data[2].weather.description);
     // const jsonString = JSON.stringify();
     console.log(data);
     if(data == "Few clouds" || data == "Overcast clouds" || data == "Broken clouds" ||
     data == "Clear Sky" || data == "Scattered clouds" 
     ){
-      let data2 = false;
+      let data2 = "false";
       console.log(data2);
-      res.json({ data: data2 });
+      res.send({ data: data2 });
+    }else{
+      let data2 = "true";
+      console.log(data2);
+      res.send({ data: data2 });
+
     }
 
     // res.json({ data: data });
@@ -72,7 +79,6 @@ app.get('/:param1', async (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
-    
   });
 
 // &city=Raleigh&country=US
