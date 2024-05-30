@@ -54,13 +54,13 @@ app.get('/:param1', async (req, res) => {
     if(data == "Few clouds" || data == "Overcast clouds" || data == "Broken clouds" ||
     data == "Clear Sky" || data == "Scattered clouds" 
     ){
-      let data2 = "false";
+      let data2 = false;
       console.log(data2);
       res.send({ data: data2 });
     }else{
-      let data2 = "true";
+      let data2 = true;
       console.log(data2);
-      res.send({ data: data2 });
+      res.json({ data: data2 });
 
     }
 
